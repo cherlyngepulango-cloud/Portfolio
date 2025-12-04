@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <h1 class="logo">MyPortfolio</h1>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div id="menu-btn">☰</div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="section hero fade-up">
+    <div class="hero-content">
+      <h1>Hello, I'm <span>Developer</span></h1>
+      <p>I create modern, responsive, and professional websites.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about fade-up">
+    <div class="about-container">
+      <img src="https://via.placeholder.com/300" alt="Profile" />
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I'm a passionate web developer focused on creating beautiful, interactive, and modern user experiences.</p>
+
+        <h3>Skills</h3>
+        <div class="skill">
+          <span>HTML</span>
+          <div class="skill-bar"><div style="width: 95%"></div></div>
+        </div>
+        <div class="skill">
+          <span>CSS</span>
+          <div class="skill-bar"><div style="width: 90%"></div></div>
+        </div>
+        <div class="skill">
+          <span>JavaScript</span>
+          <div class="skill-bar"><div style="width: 85%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+<section id="projects" class="section projects fade-up">
+  <h2>My Projects</h2>
+
+  <div class="project-grid">
+
+    <!-- ✅ PROJECT 1 (FULL LIVE PROJECT VIEW) -->
+    <div class="project-card"
+      data-title="Timeless Celebrations"
+      data-description="Full event planning web system"
+      data-link="https://www.figma.com/proto/sjsVkJyaoKaWpoPAPb3JjS/PF108-PROJECT-UPDATED?node-id=331-2004&starting-point-node-id=417%3A3001">
+
+      <img src="img/time.png" alt="Project 1">
+      <h3>Project 1</h3>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card"
+      data-title="Project 2"
+      data-description="Second live website"
+      data-link="https://example.com">
+
+      <img src="https://via.placeholder.com/400x250">
+      <h3>Project 2</h3>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card"
+      data-title="Project 3"
+      data-description="Third web project"
+      data-link="https://example.com">
+
+      <img src="https://via.placeholder.com/400x250">
+      <h3>Project 3</h3>
+    </div>
+
+  </div>
+</section>
+
+<!-- ✅ LIVE PROJECT MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content live-modal">
+    <span id="closeModal">&times;</span>
+
+    <h2 id="modalTitle"></h2>
+    <p id="modalDescription"></p>
+
+    <!-- ✅ FULL LIVE PROJECT DISPLAY -->
+    <iframe id="modalFrame"></iframe>
+
+    <!-- ✅ OPEN IN NEW TAB BUTTON -->
+    <a id="openFullProject" target="_blank" class="btn">Open Full Project</a>
+  </div>
+</div>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact fade-up">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <div class="input-group">
+        <input type="text" placeholder=" " required />
+        <label>Your Name</label>
+      </div>
+      <div class="input-group">
+        <input type="email" placeholder=" " required />
+        <label>Your Email</label>
+      </div>
+      <div class="input-group">
+        <textarea placeholder=" " required></textarea>
+        <label>Your Message</label>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ✅ MODAL -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+      <img id="modalImage" />
+    </div>
+  </div>
+
+  <!-- BACK TO TOP -->
+  <button id="backToTop">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

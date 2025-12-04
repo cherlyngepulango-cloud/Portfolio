@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+  background: #f0f0f0;
+  color: #111;
+}
+
+.section {
+  padding: 100px 50px;
+}
+
+/* NAVIGATION */
+nav {
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background: rgba(0,0,0,0.85);
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+#menu-btn {
+  display: none;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1201f7, #f70088);
+  color: #fff;
+}
+
+.btn {
+  background: #0af;
+  padding: 12px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #000;
+}
+
+/* PROJECTS */
+.project-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  flex: 1 1 calc(33% - 20px);
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+
+/* ✅ LIVE PROJECT MODAL */
+.live-modal {
+  width: 90%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.live-modal iframe {
+  flex: 1;
+  width: 100%;
+  border: none;
+  margin-top: 15px;
+  border-radius: 10px;
+  background: white;
+}
+
+
+/* MODAL */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #111;
+  color: white;
+  padding: 25px;
+  width: 70%;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.modal-content img {
+  width: 100%;
+  margin-top: 15px;
+  background: #222;
+}
+
+#closeModal {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* FADE */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* BACK TO TOP */
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+}

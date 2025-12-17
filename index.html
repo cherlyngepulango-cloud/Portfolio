@@ -1,0 +1,253 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav>
+    <h1 class="logo">My Portfolio</h1>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div id="menu-btn">☰</div>
+  </nav>
+
+<section id="home" class="hero">
+  <div class="hero-container">
+
+    <!-- LEFT CONTENT -->
+    <div class="hero-text">
+      <span class="hero-subtitle">Web Developer & Designer</span>
+      <h1>
+        Hello, I’m <br />
+        <span>Cherlyn C. Gepulango</span>
+      </h1>
+      <p>
+        I create modern, responsive, and user-friendly websites. Turning ideas into clean digital experiences.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="resume.pdf" target="_blank" class="btn">View Resume</a>
+        <a href="resume.pdf" download class="btn">Download Resume</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="pro.jpg" alt="Cherlyn Gepulango">
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ABOUT ME SECTION -->
+<section class="about" id="about">
+  <div class="about-container">
+    
+    <!-- PROFILE IMAGE (LEFT) -->
+    <div class="profile-img">
+      <img src="pro.jpg" alt="Cherlyn Gepulango">
+    </div>
+
+    <!-- ABOUT TEXT (RIGHT) -->
+    <div class="about-content">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>Hello! I'm Cherlyn C. Gepulango, a passionate web developer and designer. I love creating beautiful, user-friendly websites and applications. My goal is to build projects that not only look great but also provide amazing user experiences. In my free time, I enjoy learning new technologies and improving my skills every day.</p>
+        <p>I specialize in HTML, CSS, JavaScript, and modern frameworks like React. I’m always eager to take on new challenges and contribute to exciting projects!</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- SKILLS GRID CENTERED BELOW -->
+  <div class="skills-container">
+    <h2 class="skills-title">My Skills</h2>
+    <div class="skills-grid">
+      <!-- HTML -->
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+        <div class="skill-name">HTML</div>
+        <div class="skill-percent">65%</div>
+        <div class="skill-bar"><div class="skill-bar-fill" data-percent="65"></div></div>
+      </div>
+
+      <!-- CSS -->
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+        <div class="skill-name">CSS</div>
+        <div class="skill-percent">50%</div>
+        <div class="skill-bar"><div class="skill-bar-fill" data-percent="50"></div></div>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-percent">45%</div>
+        <div class="skill-bar"><div class="skill-bar-fill" data-percent="45"></div></div>
+      </div>
+
+      <!-- Git -->
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+        <div class="skill-name">Git</div>
+        <div class="skill-percent">40%</div>
+        <div class="skill-bar"><div class="skill-bar-fill" data-percent="40"></div></div>
+      </div>
+
+      <!-- PHP -->
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+        <div class="skill-name">PHP</div>
+        <div class="skill-percent">55%</div>
+        <div class="skill-bar"><div class="skill-bar-fill" data-percent="55"></div></div>
+      </div>
+
+      <!-- MySQL -->
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+        <div class="skill-name">MySQL</div>
+        <div class="skill-percent">50%</div>
+        <div class="skill-bar"><div class="skill-bar-fill" data-percent="50"></div></div>
+      </div>
+
+      <!-- Figma -->
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+        <div class="skill-name">Figma</div>
+        <div class="skill-percent">80%</div>
+        <div class="skill-bar"><div class="skill-bar-fill" data-percent="80"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <!-- PROJECTS SECTION -->
+<section id="projects" class="projects">
+  <h2>My Projects</h2>
+
+  <div class="project-grid">
+
+    <!-- PROJECT 1 -->
+    <div class="project-card fade-up">
+      <div class="project-img-container">
+        <img src="time.png" alt="Timeless Celebration" class="project-img">
+      </div>
+      <div class="project-description">
+        <h3>Timeless Celebration</h3>
+        <p>Elegant event planning mobile app UI focused on weddings and celebrations with smooth navigation and beautiful layouts.</p>
+        <a href="#" class="view-project-btn">View Project</a>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card ">
+      <div class="project-img-container">
+        <img src="tracker.png" alt="Expense Tracker" class="project-img">
+      </div>
+      <div class="project-description">
+        <h3>Expense Tracker</h3>
+        <p>Personal expense tracker UI for fast daily use, real-time totals, and simple expense management.</p>
+        <a href="#" class="view-project-btn">View Project</a>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card fade-up">
+      <div class="project-img-container">
+        <img src="pro.png" alt="Product Management" class="project-img">
+      </div>
+      <div class="project-description">
+        <h3>Product Management</h3>
+        <p>Admin dashboard UI for managing products, categories, and inventory with clean workflows.</p>
+        <a href="#" class="view-project-btn">View Project</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CONTACT SECTION -->
+<section class="contact section" id="contact">
+  <h2>Contact Me</h2>
+
+  <div class="contact-container">
+
+    <!-- LEFT SIDE -->
+    <div class="contact-info">
+      <!-- Contact Info FIRST -->
+      <p><strong>Name:</strong> Cherlyn C. Gepulango</p>
+      <p><strong>Location:</strong> Magtuod, Davao City, Philippines</p>
+      <p><strong>Call:</strong> 09203026536</p>
+       <p><strong>Email:</strong> cherlyn_gepulango@sjp2cd.edu.ph</p>
+
+      <!-- Paragraph text AFTER -->
+      <p>
+       "Hi, I’m Cherlyn C. Gepulango, a passionate web developer. I enjoy turning ideas into meaningful projects and collaborating on new opportunities. I’m open to discussions, collaborations, or sharing ideas, bringing creativity, dedication, and problem-solving to every project. No matter the size of your idea, I’d love to help make it a reality."
+      </p>
+    </div>
+
+    <!-- RIGHT SIDE FORM -->
+    <form class="contact-form" id="contactForm">
+      <div class="input-group">
+        <input type="text" id="name" placeholder=" " required />
+        <label>Your Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" id="email" placeholder=" " required />
+        <label>Your Email</label>
+      </div>
+
+      <div class="input-group">
+        <textarea id="message" placeholder=" " required></textarea>
+        <label>Your Message</label>
+      </div>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <!-- SOCIAL ICONS -->
+  <div class="social-links">
+    <a class="email" href="mailto:cherlyn_gepulango@sjp2cd.edu.ph"><i class="fa-solid fa-envelope"></i></a>
+    <a class="facebook" href="https://www.facebook.com/cherlyn.gepulango.5" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    <a class="instagram" href="https://www.instagram.com/cherlyngepulango/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a class="github" href="https://github.com/cherlyngepulango-cloud" target="_blank"><i class="fa-brands fa-github"></i></a>
+  </div>
+</section>
+
+
+<!-- SUCCESS POPUP -->
+<div class="popup" id="popup">
+  <div class="popup-content">
+    <div class="popup-icon">✓</div>
+    <h3>Message Sent!</h3>
+    <p>Thank you for reaching out. I’ll get back to you soon.</p>
+    <button id="closePopup">OK</button>
+  </div>
+</div>
+
+
+<button id="backToTop" aria-label="Back to top">
+  <span>Back</span>
+</button>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
